@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nav Bar pratical</title>
+    <link rel="css/stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <nav id="navbar">
+      <div id="nav-container">
+        <ul>
+          <li>
+            <a href="#"> Torbita</a>
+          </li>
+          <ul>
+            <li>
+              <a href="./html/torbita_logo.html"> Typography</a>
+            </li>
+            <a href="./html/about.html"> About</a>
+          </ul>
+        </ul>
+        <form>
+          <input type="search" name="search" id="search" value="click" />
+          <input type="submit" value="search" ;name="btn-search" />
+        </form>
+      </div>
+    </nav>
+    <style>
+      #nav-container,
+      #nav-container > ul,
+      #nav-container > ul {
+        display: flex;
+        align-items: center;
+        gap: 50px;
+        list-style: none;
+      }
+      #navbar {
+        background-color: rgb(235, 15, 15);
+      }
+      #nav-container {
+        justify-content: space-between;
+      }
+      input[name="search"] {
+        border: 2px solid black;
+        height: 1.875rem;
+        width: 10.375rem;
+        border-radius: 0.575rem;
+        padding-left: 0.625rem;
+      }
+      input[name="btn-search"] {
+        border: 3px solid black;
+        height: 1.875rem;
+        width: 4.375rem;
+        border-radius: 0.575rem;
+        background-color: black;
+      }
+    </style>
+
+    <p></p>
+    <section id="test">
+      <div class="box">
+        hi Debby greetings from this end. sequel to this the last
+      </div>
+      <div class="box">
+        hi Debby greetings from this end. sequel to this the last
+      </div>
+      <div class="box">
+        hi Debby greetings from this end. sequel to this the last
+      </div>
+      <div class="box">
+        hi Debby greetings from this end. sequel to this the last
+      </div>
+      <div class="box">
+        hi Debby greetings from this end. sequel to this the last
+      </div>
+      <div class="box">
+        hi Debby greetings from this end. sequel to this the last
+      </div>
+      <div class="box">
+        hi Debby greetings from this end. sequel to this the last
+      </div>
+      <div class="box">
+        hi Debby greetings from this end. sequel to this the last
+      </div>
+      <div class="box">
+        hi Debby greetings from this end. sequel to this the last
+      </div>
+      <div class="box">
+        hi Debby greetings from this end. sequel to this the last
+      </div>
+      <div class="box">
+        hi Debby greetings from this end. sequel to this the last
+      </div>
+      <div class="box">
+        hi Debby greetings from this end. sequel to this the last
+      </div>
+    </section>
+    <style>
+      #test {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        padding-left: 2px;
+        /* flex-direction: column: */
+      }
+      .box {
+        border: 3px solid black;
+        margin: 5px;
+        width: 200px;
+      }
+    </style>
+    <img src="./media/FB_IMG_1683600512273.jpg" alt="A Lady" />;
+  </body>
+</html>

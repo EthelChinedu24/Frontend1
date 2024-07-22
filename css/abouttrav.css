@@ -1,0 +1,176 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+
+.logo img {
+    padding-left: 4px;
+    padding-top: 3px;
+    border-radius: 100px;
+    width: 40px;
+    padding-bottom: 3px;
+    object-fit: cover;
+    height: 40px;
+}
+nav div ul{
+display: flex;
+justify-content: space-between;
+align-items: center;
+list-style: none;
+
+}
+nav div li{
+    margin: 0 0.9rem;
+    position: relative;
+    font-size: 2.0rem;
+    margin-top: 0%;
+    float: right;
+}
+
+nav div li::before{
+    content: "";
+    position: absolute;
+    top: 30px;
+    left: 0px;
+    width: 10px;
+    height: 3px;
+    background: #d3c7b2;
+    opacity: 0;
+    transition: all 0.3s ease-in;
+}
+ 
+nav div li:hover::before {
+    opacity: 1;
+    width: 100%;
+}
+
+.about{
+    width: 100%;
+    padding: 60px 0px;
+    background-color: rgb(138, 114, 82);
+}
+
+.about img{
+    height: 60%;
+    width: 420px;
+}
+.about-text{
+    width: 550px;
+
+
+}
+nav .search-bar-container{
+    position: absolute;
+    top: 20%; left: 0; right: 0;
+    padding: 1.5rem 2rem;
+    background: #d3c7b2;
+    border-top: .1rem solid rgba(255,255,255,.2);
+    display: flex;
+    align-items: center;
+    z-index: 1001;
+    
+
+}
+nav .search-bar-container #search-bar{
+    width: 100%;
+    padding: 1rem;
+    text-transform: none;
+    color: #050505;
+    font-size: 1.1rem;
+}
+nav .search-bar-container label{
+    color: #050505;
+    cursor: pointer;
+    font-size: 2rem;
+    margin-left: 1.5rem;
+}
+nav .search-bar-container label:hover{
+    color: #fff;
+    transition: .2s ease-in;
+}
+.main{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.about-text h1{
+color: white;
+font-size: 80px;
+text-transform: capitalize;
+margin-bottom: 20px;
+}
+.about-text h5{
+    color: white;
+    font-size: 25px;
+    text-transform: capitalize;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+
+}
+.span{
+    color: blue;
+}
+.about-text p{
+    line-height: 28px;
+    margin-bottom: 45px;
+    font-weight: bold;
+}
+.about h5 .airline{
+    font-weight: bolder;
+}
+
+.button{
+    text-decoration: none;
+    color:white ;
+    border: 1px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+}
+
+.page img{
+    height: 250px;
+    width: 240px;
+    padding: 10px;
+    background-color: #050505;
+    margin: 60px;
+    margin-left: 30px;
+    margin-top: 20px;
+
+}
+.desc{
+    align-items: center;
+}
+
+.page{
+    background-color: rgb(138, 114, 82);
+    display: flex;
+   
+    justify-content: space-between;  
+}
+
+img .gallery{
+    display: flex;
+    padding: 10px;
+    padding-right: 5px;
+}
+.page h2{
+    align-items: center;
+}
+.about h2{
+    font-weight: bolder;
+    text-shadow: 10px rgb(21, 21, 48);
+}
+
+footer img{
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homepage</title>
+    <script src="./index.JS/Exercise.JS"></script>
+  </head>
+  <body>
+    <nav id="navbar">
+      <div id="nav-container">
+        <ul>
+          <li>
+            <a href="#"> Torbita</a>
+          </li>
+          <ul>
+            <li>
+              <a href="./html/torbita_logo.html"> Torbita Banner</a>
+            </li>
+            <li>
+              <a href="./html/Typography.html"> Typography</a>
+            </li>
+            <li>
+              <a href="./html/about.html"> About</a>
+            </li>
+          </ul>
+        </ul>
+        <form>
+          <input type="search" name="search" id="search" value="click here" />
+          <input type="submit" value="search" ; name="btn-search" />
+        </form>
+      </div>
+    </nav>
+    <style>
+      #nav-container,
+      #nav-container > ul,
+      #nav-container > ul > ul {
+        display: flex;
+        align-items: center;
+        gap: 50px;
+        list-style: none;
+      }
+      #navbar {
+        background-color: rgb(21, 167, 21);
+      }
+
+      #nav-container {
+        justify-content: space-between;
+      }
+      input[name="search"] {
+        border: 2px solid lightcyan;
+        height: 1.875rem;
+        border-radius: 0.575rem;
+        width: 10.375rem;
+        padding-left: 0.625rem;
+      }
+      input[name="btn-search"] {
+        border: 3px dashed rgb(140, 140, 229);
+        height: 1.875rem;
+        width: 4.375rem;
+        border-radius: 0.575rem;
+        background-color: transparent;
+      }
+    </style>
+  </body>
+</html>

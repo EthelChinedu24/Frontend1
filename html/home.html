@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Travel Booking Site</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../css/traveling.css" />
+  </head>
+  <body>
+    <!-- Navbar-->
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="logo">
+        <a class="navbar-brand" href="#"
+          ><img
+            src="data:image/jpeg;base64,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"
+            alt="logo"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../html/home.html"
+                ><h5>Home</h5></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../html/abouttrav.html"><h5>About</h5></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../html/tour.html"><h5>Tour</h5></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../html/arrival.html"><h5>Destination</h5></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../html/gallery.html"><h5>Gallery</h5></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../html/contact.html"><h5>Contact Us</h5></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--carousel-->
+    <div
+      id="carouselExampleIndicators"
+      class="carousel slide"
+      data-bs-ride="true"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="3"
+          aria-label="Slide 4"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="4"
+          aria-label="Slide 5"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="5"
+          aria-label="Slide 6"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="../media/T img2 jpg.jpg"
+            class="d-block w-100"
+            alt="yourfirstchoice"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="../media/fly png.jpg"
+            class="d-block w-100"
+            alt="flywithus"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="../media/family png.jpg"
+            class="d-block w-100"
+            alt="tourwithfamily"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="../media/inside A png.jpg"
+            class="d-block w-100"
+            alt="reachdestination"
+          />
+        </div>
+        <div class="carousel-item">
+          <img src="../media/cap png.jpg" class="d-block w-100" alt="gallery" />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="../media/resevation png.jpg"
+            class="d-block w-100"
+            alt="makereservations"
+          />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- carousel close-->
+    <!-- main Container-->
+    <div class="container">
+      <h1 class="text-right p-3 mb-3 mt-3 -">Tour With Us Today!</h1>
+
+      <div class="w-100 bg-dark-subtle p-5 mb-5">
+        <p>
+          <h3>History</h3>
+          <p>
+            
+            United Express, a regional branch of United Airlines, was established to provide efficient feeder service to United's main hubs and extend its network to smaller markets. Launched in 1985, United Express operates under several regional carriers through codeshare agreements. These carriers include Mesa Airlines, SkyWest Airlines, and Republic Airways, among others.
+            
+            The formation of United Express aimed to streamline regional air travel, allowing passengers to connect seamlessly to United Airlines' global routes. Over the years, United Express has expanded its fleet and service areas, consistently improving its operational standards and customer experience.
+            
+            With a fleet comprising regional jets and turboprops, United Express serves numerous destinations across North America, including smaller cities that are not economically viable for larger aircraft. The collaboration between United Airlines and its regional partners ensures passengers enjoy consistent service quality and reliability.
+            
+            United Express continues to play a crucial role in United Airlines' strategy, enhancing connectivity and providing essential air travel services to diverse regions.
+            
+          </p>
+        </p>
+        <button type="button" class="btn btn-primary btn-lg">
+          Read More
+        </button>
+      </div>
+      <h2 id="destinations class=fs-1 pl-5 mt-5 mb-5 ml-5 text-center">
+        Intresting Sites
+      </h2>
+
+<div class="row">
+        <div class="col">
+          <!-- Card 1-->
+          <div class="card" style="width: 18rem">
+            <img
+              src="../media/greenV PNG.jpg"
+              class="card-img-top"
+              alt="Greenview"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Enjoy Special Offers</h5>
+              <p class="card-text">
+                
+<b class="text-primary">Spring Getaway Sale</b>
+Destination:New York to Miami
+Price:$199 (Round-Trip)<br>
+
+ <b class="text-primary">European Adventure</b>
+   - Destination: Los Angeles to Paris
+   Price:$199 (Round-Trip)<br>
+<b class="text-primary"> Domestic Discount</b>
+   - Destination: Chicago to Orlando
+   Price: $89 (One-Way)<br>
+  <b class="text-primary"> Last-Minute Escape</b>
+   - Destination:San Francisco to Seattle
+   Price:$1,299 (Round-Trip Business Class)<br>
+<b class="text-primary">Business Class Upgrade</b>
+   - Destination: Dallas to London
+   Price: $1,299 (Round-Trip Business Class)<br>
+  
+<b class="text-primary"> Weekend Escapes</b>
+   - Destination: Lagos to Las Vegas
+   Price: $350 (Round-Trip)
+
+              </p>
+              <a href="../html/arrival.html" class="btn btn-primary">Book Here</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <!-- Card 2-->
+          <div class="card" style="width: 18rem">
+            <img
+              src="../media/bluesky png.jpg"
+              class="card-img-top"
+              alt="bluesky"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Awards & Recognition</h5>
+              <p class="card-text">
+                
+<b class="text-primary">Skytrax World Airline Awards:</b> United Airlines has received recognition in various categories, including awards for Best Airline Staff Service and Best Transatlantic Airline.
+
+<b class="text-primary" >Power Awards:</b> United Airlines has been recognized in the J.D. Power Airline Satisfaction Study for its performance in various service aspects.
+
+<b class="text-primary" >Travel + Leisure:</b> United Airlines has been featured in lists for best airlines based on traveler surveys and feedback.
+
+<b class="text-primary">Forbes:</b> United Airlines has been included in Forbes' lists of top companies and best places to work, reflecting its overall reputation and employee satisfaction.
+</p>
+              <a href="#" class="btn btn-primary">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <!-- Card 3-->
+          <div class="card" style="width: 18rem">
+            <img
+              src="../media/luggage png.jpg"
+              class="card-img-top"
+              alt="luggages"
+            />
+            <div class="card-body">
+             <h5 class="card-title">Implementation Plan</h5>
+              <p class="card-text">
+                
+<b class="text-primary">Launch Event:</b>A launch event with travel influencers <br>Media coverage to unveil  new branding and initiatives.
+<b class="text-primary"> Digital Marketing:</b> Leverage on SEO, PPC, and social media ads target on demographics.
+<b class="text-primary">Email Campaigns:</b> Personalized emails to loyalty program <br>members with exclusive offers and updates.
+<b class="text-primary">In-Flight Promotions:</b> In-flight magazines and announcements to inform our <br>passengers about new services and loyalty benefits.
+By focusing  these elements, we create a compelling and memorable brand presence, <br>to attract new customers, and retain loyal travelers.
+
+
+              </p>
+              <a href="../html/abouttrav.html" class="btn btn-primary">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="row">
+          <div class="col-6">
+            <div class="bg-secondary p-5 mt-5 mb-5">
+              <h2>Ratings</h2>
+           <li>Overall Ratings: 4.5/5</li>
+                    <li>Seat Comfort: 4/5</li>
+                    <li>In-Flight Entertainment: 4.2/5</li>
+                    <li>Food & beverages: 3.8/5</li>
+                    <li>Staff Service: 4.7/5</li>
+                    <li>Cleanliness: 4.3/5</li>
+                    <li>Value for money: 4/5</li>
+                    <div class="stars text-center mt-3">
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star text-white"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      
+                    </div>
+            
+            
+              </p>
+            </div>
+          </div>
+         
+        <div class="col-6">
+          <div class="bg-primary text-white p-5 mt-5 mb-5">
+            <h2>Popular Cities</h2>
+            <p>
+             <b>1. New York City USA</b>
+             <li> Times Square, Central Park, Broadway Shows</li>
+            <b>2. Paris, France</b>
+              <li> Eiffel Tower, Louvre Museum, Notre-Dame 
+                     Cathedral</li>
+            <b>3. London UK</b>
+              <li> Buckingham Palace, Tower ofLondon, British Museum
+              </li>
+            <b>4. Dubai, UAE</b>
+              <li> Burj Khalifa, Dubai Mall, Palm Jumeirah 
+                    </li>
+            </p>
+        </div>
+        </div>
+
+        <div class="col-6">
+          <div class="bg-primary text-black p-5 mt-5 mb-3">
+            <h2>Features</h2>
+            <p>
+             
+<li>Fleet Diversity</li> 
+   - Modern aircraft with advanced technology
+<li>In-Flight Services</li> 
+   - Wi-Fi availability for browsing and streaming
+<li>Customer Service</li> 
+   - Easy booking and check-in process
+   - Assistance for special needs passengers
+<li>Safety and Reliability</li> 
+   - High safety standards and regular maintenance checks
+<li>Baggage Policies</li> 
+            </p>
+        </div>
+        </div>
+     <div class="col-6">
+          <div class="bg-secondary text-white p-5 mt-5 mb-5">
+            <h2>Reviews</h2>
+            <p>
+             <i>Comment: "Had a wonderful xperience flying with United Express Airline. The staff were friendly and attentive"
+              <b class="black">felicity Rocks.</b>
+             </i>
+            </p>
+            <p><i>Comment: "What a fantastic xperience! The crew went above & beyond to ensure we were comfortable. Flight was smooth & on time, highly recommend United Express Airline"
+              <b class="black">Michelle.</b></i></p>
+              <p><i>Comment:"Good value for money, staff efficient and friendly. Food could have been better, but overall, a positive xperience"
+                <b class="black">Stanely Daves</b>
+              </i></p>
+        </div>
+        </div>
+          </div>
+        </div>
+          </p>
+        </div>
+         <!-- Contact Us-->
+         <h2 id="class=fs-1 text-primary pl-5 mt-5 mb-5 ml-5 text-center bg-dark">Enjoy Your Trip With United Express</h2>
+         <video src="../media/rainly airport.mp4" muted loop autoplay alt="vacation" class="w-100" mb-5></video>
+
+    <!-- end main Container-->
+  
+     <!-- Footer-->
+<footer class="bg-dark mt-5 p-5  text-center text-white w-cover" >
+     <p>&copy; Tour The World <img src="../media/Globe png.jpg " alt=""> Today </p>
+     <P><a href="ethelangel2024@gmail.com">Email Us</a></P>
+</footer>
+      <!-- fOoter end-->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
+

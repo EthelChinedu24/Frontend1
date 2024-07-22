@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" );
+:root{
+    --primary-color: #2095ae;
+    --white-color: #fff;
+    --light-grey-color: #ddd;
+    --pink-color: #900090;
+}
+ 
+.logo img {
+    padding-left: 4px;
+    padding-top: 3px;
+    border-radius: 100px;
+    width: 40px;
+    padding-bottom: 3px;
+    object-fit: cover;
+    height: 40px;
+    background-color: rgb(155, 151, 142);
+   
+}
+nav div ul{
+display: flex;
+justify-content: space-between;
+align-items: stretch;
+list-style: none;
+
+}
+nav div li{
+    margin: 0 0.9rem;
+    font-size: 2.0rem;
+    margin-top: 0%;
+    float: right;
+}
+
+nav div li::before{
+    content: "";
+    position: absolute;
+    top: 30px;
+    left: 0px;
+    width: 7px;
+    height: 3px;
+    background: var(--white-color);
+    opacity: 0;
+    transition: all 0.3s ease-in;
+    text-decoration-color: #fff;
+}
+ 
+nav div li:hover::before {
+    opacity: 1;
+    width: 100%;
+}
+body{
+    background-image: url(../media/fine\ contact\ bg.jpg);
+    width: 100%;
+    height: 100%;
+    background-size: 100%;
+    position: relative;
+    background-repeat: no-repeat;
+    background-color: rgb(15, 3, 3);
+}
+header{
+    position: absolute;
+    text-align: right;
+    width: 75%;
+    left: 6%;
+    top: 6rem;
+    bottom: 75%;
+}
+header h1{
+    font-size: 25px;
+}
+.empty{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.content {
+    display: flex;
+    min-height: 110vh;
+}
+
+.content section{
+    margin-top: 4vh;
+    margin-left: 15vh;
+}
+
+.content form{
+    margin-top: 5rem;
+}
+section i{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    }
+    form{
+        display: flex;
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-left: 50%;
+        justify-content: center;
+        align-items: center;
+        min-height: 110vh;
+    }
+    .form .contact-form{
+        width: 30rem;
+        background-color: transparent;
+        border: 0px;
+        border: transparent;
+        margin: 20px;
+        padding: 20px;
+        font-size: 18px;
+        border-bottom: 2px solid #900090;
+
+    }
+    .form.contact-form input ~ span{
+        position: absolute;
+        left:120px;
+        transition: 0.9s ease-in-out;
+        margin-top: 10px;
+    }
+
+    .form .form.contact-form input:focus ~ span{
+        transform: translateY(-20px);
+        pointer-events: none;
+    }
+
+    .form .contact-form textarea{
+        width: 30rem;
+        border: 0;
+        background-color: transparent;
+        margin: 20px;
+        font-size: 17px;
+        border-bottom: 2px solid #1b1414;
+    }
+    .form .contact-form textarea ~ span{
+        left: 20px;
+        margin-top: 10px;
+        transition: 0.9s ease-in-out;
+    }
+    .form .contact-form textarea:focus ~ span{
+        transform: translateY(-20px);
+        pointer-events: none;
+    }
+    .form .contact-form input[type=submit]{
+        background-color: dodgerblue;
+        border: 2px solid dodgerblue;
+        font-size: 18px;
+        width: 50%;
+        height: 40px;
+        margin-top: -5px;
+    }
+    .form .contact-form input[type=submit]:hover{
+        background-color: transparent;
+        color: dodgerblue;
+    }
+    .media{
+        position: absolute;
+        top: 100vh;
+        right: 20vh;
+        display: flex;
+        list-style: none;
+    }
+    .media li{
+        margin: 20px 30px
+
+    }
+   @media screen and (max-width: 900px){
+    body{
+        background-repeat: repeat-y;
+        overflow: auto;
+ }
+   }
+   .btn .btn-primary btn-lg{
+    top: 120vh;
+   }
+   
+  
+
+    
+   
